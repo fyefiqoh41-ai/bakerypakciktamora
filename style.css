@@ -1,0 +1,164 @@
+:root {
+  --paper: #f6efe4;
+  --dark: #1c1c1c;
+  --brown: #7a4a2e;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: var(--paper);
+  color: var(--dark);
+}
+
+/* HERO */
+.hero {
+  background:
+    linear-gradient(rgba(246,239,228,.9), rgba(246,239,228,.9)),
+    url("images/hero.jpg") center/cover;
+  padding: 120px 20px;
+  text-align: center;
+}
+
+.brand {
+  font-size: 12px;
+  letter-spacing: 2px;
+}
+
+.hero h1 {
+  font-size: 48px;
+  font-weight: 800;
+}
+
+.hero h1 span {
+  font-weight: 400;
+}
+
+/* MENU */
+.menu {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.menu-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 15px;
+}
+
+.menu-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+/* BOX */
+.box {
+  text-align: center;
+  padding: 40px 20px;
+  font-size: 20px;
+}
+
+/* HALAL */
+/* HALAL BIG SECTION */
+.halal-big {
+  background: #ffffff;
+  padding: 70px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.halal-box {
+  border: 3px solid #d4af37;
+  border-radius: 20px;
+  padding: 40px 30px;
+  max-width: 520px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0,0,0,.1);
+}
+
+.halal-box img {
+  width: 160px; /* 🔥 DIBESARKAN */
+  margin-bottom: 20px;
+}
+
+.halal-box h2 {
+  font-size: 28px;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+.halal-box p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.halal-box span {
+  display: inline-block;
+  margin-top: 15px;
+  font-weight: bold;
+  background: #f6efe4;
+  padding: 8px 15px;
+  border-radius: 20px;
+}
+
+
+/* LOCATION */
+.location {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.map iframe {
+  width: 100%;
+  max-width: 600px;
+  height: 300px;
+  border-radius: 15px;
+  border: none;
+  margin-top: 20px;
+}
+
+/* CTA */
+.cta {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.cta a {
+  background: var(--dark);
+  color: #fff;
+  padding: 18px 40px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* FOOTER */
+footer {
+  padding: 20px;
+  text-align: center;
+  font-size: 14px;
+}
+
+@media (max-width: 600px) {
+  .halal-box img {
+    width: 140px;
+  }
+  .halal-box h2 {
+    font-size: 22px;
+  }
+}
+
