@@ -1,13 +1,53 @@
-:root {
-  --paper: #f6efe4;
-  --dark: #1c1c1c;
-  --brown: #7a4a2e;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  font-family: 'Poppins', sans-serif;
+body {
+    line-height: 1.6;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #8B4513;
+    padding: 15px 30px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+/* SECTIONS */
+.section {
+    padding: 60px 30px;
+    max-width: 1000px;
+    margin: auto;
 }
 
 body {
@@ -153,12 +193,12 @@ footer {
   font-size: 14px;
 }
 
+/* RESPONSIVE */
 @media (max-width: 600px) {
-  .halal-box img {
-    width: 140px;
+  .hero h1 {
+    font-size: 32px;
   }
-  .halal-box h2 {
-    font-size: 22px;
+  .halal {
+    flex-direction: column;
   }
 }
-
